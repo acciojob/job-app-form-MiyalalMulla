@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body method="POST">
+<body >
+	<form method="POST">
+		
 	<label for="name" class="required">Name:</label>
 	<input id="name" type="text" required>
 	<br><br>
@@ -14,10 +16,11 @@
 	<input id="email" type="Email" required>
 	<br><br>
 	<label class="required" for="gen1">Gender</label>
-	<input id="gen1" type="radio"  name="gender" required>
-	<input id="gen2" type="radio" name="gender">
+	<input id="gen1" type="radio" name="gender" value="male" required>
+	<input id="gen2" type="radio" name="gender" value="female">
 	<br><br>
-	<select id="myDropdown" name="laptop Brands">
+	<label for="laptop">Laptop Brands</label>
+	<select id="laptop" name="laptop Brands">
 	  <option value="apple">Apple</option>
 	  <option value="asus">Asus</option>
 	  <option value="hp">HP</option>
@@ -29,14 +32,15 @@
 	<label for="dob" class="required">Date of Birth</label>
 	<input id="dob" type="date" required>
 	<br><br>
-	<label for="pass" class="required">Password</label>
-	<input id="pass" type="password" required>
+	<label for="password" class="required">Password</label>
+	<input id="password" type="password" required>
 	<br><br>
 	<label for="portfolio">URL</label>
 	<input id="portfolio" type="url">
 	<br><br>
 	<button type="submit">Button</button>
 	
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
